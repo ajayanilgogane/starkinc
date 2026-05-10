@@ -8,9 +8,11 @@ import {
   doubleActionBalingPress,
   tripleActionBalingPress,
   sheering,
-  
   straighteningMachine,
   decoilerMachine,
+  rollmachine,
+  fastpunching,
+  prepunching
 } from '../../assets/images';
 import './Products.css';
 
@@ -75,6 +77,24 @@ const Products = () => {
       name: 'Decoiler',
       image: decoilerMachine,
       description: 'Industrial decoiling systems for automated material feeding and processing.',
+    },
+    {
+      id: 11,
+      name: 'Roll Machine',
+      image: rollmachine,
+      description: 'Advanced roll forming equipment for continuous metal shaping and fabrication.',
+    },
+    {
+      id: 12,
+      name: 'Fast Punching Machine',
+      image: fastpunching,
+      description: 'High-speed punching systems for rapid hole making in sheet metal applications.',
+    },
+    {
+      id: 13,
+      name: 'Pre-Punching Machine',
+      image: prepunching,
+      description: 'Precision pre-punching equipment for initial hole formation in metal components.',
     },
   ];
 

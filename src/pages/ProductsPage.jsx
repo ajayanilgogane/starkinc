@@ -12,6 +12,10 @@ import {
   sheering,
   straighteningMachine,
   decoilerMachine,
+  rollmachine,
+  fastpunching,
+  prepunching
+
 } from '../assets/images';
 import './Pages.css';
 
@@ -146,6 +150,45 @@ const ProductsPage = () => {
       ],
       description:
         'Industrial decoiling systems for automated material feeding and processing applications.',
+    },
+    {
+      id: 11,
+      name: 'Roll Machine',
+      image: rollmachine,
+      price: '$30,000 - $100,000',
+      specs: [
+        'High precision',
+        'Durable construction',
+        'Efficient operation',
+      ],
+      description:
+        'Specialized roll machines for metal forming and shaping applications.',
+    },
+    {
+      id: 12,
+      name: 'Fast Punching Machine',
+      image: fastpunching,
+      price: '$40,000 - $150,000',
+      specs: [
+        'High-speed operation',
+        'Precision punching',
+        'Automated controls',
+      ],
+      description:
+        'High-speed punching equipment for rapid production of sheet metal components.',
+    },
+    {
+      id: 13,
+      name: 'Pre-Punching Machine',
+      image: prepunching,
+      price: '$35,000 - $120,000',
+      specs: [
+        'Pre-punching capabilities',
+        'Precision alignment',
+        'Efficient operation',
+      ],
+      description:
+        'Specialized pre-punching machines for preparing sheet metal for subsequent manufacturing processes.',
     },
   ];
 

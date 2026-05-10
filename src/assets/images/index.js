@@ -15,6 +15,9 @@ import Textile from './textile.jpg';
 import FoodProcessing from './food-processing.jpg';
 import Electronics from './electronics.jpg';
 import HeavyEngineering from './heavy-engineering.jpg';
+import rollmachine from './roll-machine.jpg';
+import fastpunching from './fast-punching.jpg';
+import prepunching from './pre-punching.jpg';
 export {
   aboutImage,
   hydraulicPowerpack,
@@ -33,4 +36,7 @@ export {
     FoodProcessing,
     Electronics,
     HeavyEngineering,
+    rollmachine,
+    fastpunching,
+    prepunching
 };
