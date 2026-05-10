@@ -17,10 +17,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <span>STARK</span>
-          <span>INDUSTRIES</span>
-        </Link>
+     <Link to="/" className="navbar-logo" onClick={closeMenu}>
+      <div className="logo-text">
+        <span>STARK</span>
+        <span>INDUSTRIES</span>
+      </div>
+      <span className="since-badge">Since 2004</span>
+    </Link>
 
         <div className="menu-icon" onClick={toggleMenu}>
           {menuOpen ? <FiX /> : <FiMenu />}
