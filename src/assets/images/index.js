@@ -10,7 +10,7 @@ import ncf001 from './spm-machine.jpg';
 import servoFeeder from './Servofeeder.webp';
 import sheering from './shearing.jpg';
 import automotives from './automotives.jpg';
-import Pharmaceuticals from './pharmaceuticals.jpg';
+import Pharmaceuticals from './Pharmaceuticals.jpg';
 import Textile from './textile.jpg';
 import FoodProcessing from './food-processing.jpg';
 import Electronics from './electronics.jpg';
