@@ -1,0 +1,36 @@
+import aboutImage from './about-image.webp';
+import hydraulicPowerpack from './Hydraulicpowerpack.jpg';
+import shearingMachine from './HydraulicPunchingmachines.jpg';
+import straighteningMachine from './straightening-machine.webp';
+import decoilerMachine from './decoiler.webp';
+import doubleActionBalingPress from './bailing.jpg';
+import tripleActionBalingPress from './Metalbailermachine.jpg';
+import hp from './Hydraulicpressingmachine.webp';
+import ncf001 from './spm-machine.jpg';
+import servoFeeder from './Servofeeder.webp';
+import sheering from './shearing.jpg';
+import automotives from './automotives.jpg';
+import Pharmaceuticals from './pharmaceuticals.jpg';
+import Textile from './textile.jpg';
+import FoodProcessing from './food-processing.jpg';
+import Electronics from './electronics.jpg';
+import HeavyEngineering from './heavy-engineering.jpg';
+export {
+  aboutImage,
+  hydraulicPowerpack,
+  shearingMachine,
+  straighteningMachine,
+  decoilerMachine,
+  doubleActionBalingPress,
+  tripleActionBalingPress,
+  hp,
+  ncf001,
+  servoFeeder,
+  sheering,
+    automotives,
+    Pharmaceuticals,
+    Textile,
+    FoodProcessing,
+    Electronics,
+    HeavyEngineering,
+};

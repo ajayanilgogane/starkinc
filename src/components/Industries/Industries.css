@@ -1,0 +1,126 @@
+.industries {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0a0e27 0%, #0f1729 100%);
+  color: white;
+}
+
+.industries-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #00d4ff;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.industry-card {
+  background: rgba(0, 212, 255, 0.05);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-10px);
+  border-color: #00d4ff;
+  box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+}
+
+.industry-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 153, 204, 0.1));
+  overflow: hidden;
+}
+
+.industry-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.industry-card:hover .industry-image img {
+  transform: scale(1.1);
+}
+
+.industry-info {
+  padding: 1.5rem;
+}
+
+.industry-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #00d4ff;
+}
+
+.industry-info p {
+  color: #b0b8d4;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .industries-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .industry-image {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .industries {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-image {
+    height: 150px;
+  }
+
+  .industry-info {
+    padding: 1rem;
+  }
+
+  .industry-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .industry-info p {
+    font-size: 0.9rem;
+  }
+}
