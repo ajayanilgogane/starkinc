@@ -21,8 +21,21 @@ import './Pages.css';
 
 const ProductsPage = () => {
   const products = [
-    {
+       {
       id: 1,
+      name: 'Roll Machine',
+      image: rollmachine,
+      price: '$30,000 - $100,000',
+      specs: [
+        'High precision',
+        'Durable construction',
+        'Efficient operation',
+      ],
+      description:
+        'Specialized roll machines for metal forming and shaping applications.',
+    },
+    {
+      id: 2,
       name: 'SPM Machines',
       image: ncf001,
       price: '$40,000 - $150,000',
@@ -35,7 +48,7 @@ const ProductsPage = () => {
         'Special Purpose Machines for high-precision manufacturing with multi-head punching capabilities.',
     },
     {
-      id: 2,
+      id: 3,
       name: 'Hydraulic Powerpack',
       image: hydraulicPowerpack,
       price: '$15,000 - $80,000',
@@ -48,7 +61,7 @@ const ProductsPage = () => {
         'Heavy-duty hydraulic power units designed for industrial machinery and equipment applications.',
     },
     {
-      id: 3,
+      id: 4,
       name: 'Hydraulic Pressing Machine',
       image: hp,
       price: '$25,000 - $120,000',
@@ -61,7 +74,7 @@ const ProductsPage = () => {
         'Professional hydraulic presses for metal forming, stamping, and heavy-duty industrial operations.',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Baling Machine',
       image: doubleActionBalingPress,
       price: '$30,000 - $100,000',
@@ -74,7 +87,7 @@ const ProductsPage = () => {
         'Efficient baling systems for material compaction and waste management applications.',
     },
     {
-      id: 5,
+      id: 6,
       name: 'Metal Baler Machine',
       image: tripleActionBalingPress,
       price: '$35,000 - $110,000',
@@ -87,7 +100,7 @@ const ProductsPage = () => {
         'Industrial metal baling equipment for scrap metal compression and recycling operations.',
     },
     {
-      id: 6,
+      id: 7,
       name: 'Servo Feeder',
       image: servoFeeder,
       price: '$20,000 - $75,000',
@@ -100,7 +113,7 @@ const ProductsPage = () => {
         'Precision servo-driven feeding systems for automated production lines and manufacturing.',
     },
     {
-      id: 7,
+      id: 8,
       name: 'Hydraulic Punching Machines',
       image: shearingMachine,
       price: '$45,000 - $180,000',
@@ -113,7 +126,7 @@ const ProductsPage = () => {
         'High-speed hydraulic punching equipment for sheet metal and component manufacturing.',
     },
     {
-      id: 8,
+      id: 9,
       name: 'Shearing Machine',
       image: sheering,
       price: '$40,000 - $160,000',
@@ -126,7 +139,7 @@ const ProductsPage = () => {
         'Professional metal shearing systems for precision cutting and trimming operations.',
     },
     {
-      id: 9,
+      id: 10,
       name: 'Straightener',
       image: straighteningMachine,
       price: '$25,000 - $90,000',
@@ -139,7 +152,7 @@ const ProductsPage = () => {
         'Precision straightening equipment for metal bars, wires, and flat materials.',
     },
     {
-      id: 10,
+      id: 11,
       name: 'Decoiler',
       image: decoilerMachine,
       price: '$18,000 - $70,000',
@@ -151,19 +164,7 @@ const ProductsPage = () => {
       description:
         'Industrial decoiling systems for automated material feeding and processing applications.',
     },
-    {
-      id: 11,
-      name: 'Roll Machine',
-      image: rollmachine,
-      price: '$30,000 - $100,000',
-      specs: [
-        'High precision',
-        'Durable construction',
-        'Efficient operation',
-      ],
-      description:
-        'Specialized roll machines for metal forming and shaping applications.',
-    },
+
     {
       id: 12,
       name: 'Fast Punching Machine',

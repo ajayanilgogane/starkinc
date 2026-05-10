@@ -20,9 +20,9 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: 'SPM Machines',
-      image: ncf001,
-      description: 'Special Purpose Machines for high-precision manufacturing and specialized operations.',
+      name: 'Roll Machine',
+      image: rollmachine,
+      description: 'Advanced roll forming equipment for continuous metal shaping and fabrication.',
     },
     {
       id: 2,
@@ -78,11 +78,11 @@ const Products = () => {
       image: decoilerMachine,
       description: 'Industrial decoiling systems for automated material feeding and processing.',
     },
-    {
-      id: 11,
-      name: 'Roll Machine',
-      image: rollmachine,
-      description: 'Advanced roll forming equipment for continuous metal shaping and fabrication.',
+   {
+      id: 1,
+      name: 'SPM Machines',
+      image: ncf001,
+      description: 'Special Purpose Machines for high-precision manufacturing and specialized operations.',
     },
     {
       id: 12,
