@@ -12,7 +12,10 @@ import {
   decoilerMachine,
   rollmachine,
   fastpunching,
-  prepunching
+  prepunching,
+  ctl,
+  rollforming,
+  fastgangpunching
 } from '../../assets/images';
 import './Products.css';
 
@@ -20,7 +23,7 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: 'Roll Machine',
+      name: 'Roll Forming Machine',
       image: rollmachine,
       description: 'Advanced roll forming equipment for continuous metal shaping and fabrication.',
     },
@@ -79,7 +82,7 @@ const Products = () => {
       description: 'Industrial decoiling systems for automated material feeding and processing.',
     },
    {
-      id: 1,
+      id: 11,
       name: 'SPM Machines',
       image: ncf001,
       description: 'Special Purpose Machines for high-precision manufacturing and specialized operations.',
@@ -96,6 +99,18 @@ const Products = () => {
       image: prepunching,
       description: 'Precision pre-punching equipment for initial hole formation in metal components.',
     },
+    {
+      id: 14,
+      name: 'CTL Line',
+      image: ctl,
+      description: 'Complete CTL (Continuous Tension Line) systems for automated metal processing.',    
+    },
+    {
+      id: 15,
+      name: 'Fast Gang Punching Machine',
+      image: fastgangpunching,
+      description: 'High-speed gang punching systems for efficient hole making in sheet metal applications.',
+    }
   ];
 
   return (

@@ -39,7 +39,7 @@ const Contact = () => {
               <FiPhone className="info-icon" />
               <div>
                 <h4>Phone</h4>
-                <p>+1 (555) 123-4567</p>
+                <p>+91 - 8889780790</p>
               </div>
             </div>
 

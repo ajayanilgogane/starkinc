@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import heroVideo from '../../assets/videos/factory-intro.mp4';
 import './Hero.css';
 
 const Hero = () => {
+  const [machineCount, setMachineCount] = useState(0);
+
+  useEffect(() => {
+    let count = 0;
+    const target = 500;
+    const duration = 2000; // 2 seconds
+    const increment = target / (duration / 20);
+
+    const timer = setInterval(() => {
+      count += increment;
+
+      if (count >= target) {
+        setMachineCount(target);
+        clearInterval(timer);
+      } else {
+        setMachineCount(Math.floor(count));
+      }
+    }, 20);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="hero" id="hero">
       <div className="hero-video-container">
@@ -43,7 +65,7 @@ const Hero = () => {
 
           <div className="hero-stats">
             <div className="hero-stat">
-              <strong>500+</strong>
+              <strong>{machineCount}+</strong>
               <span>Machines Delivered</span>
             </div>
 
@@ -64,6 +86,9 @@ const Hero = () => {
             <h3>Core Manufacturing Systems</h3>
 
             <ul>
+              <li>Pre-Punching Machines</li>
+              <li>Gang Punching Machines</li>
+              <li>Roll Forming Machines</li>
               <li>SPM Machines</li>
               <li>Hydraulic Powerpacks</li>
               <li>Hydraulic Pressing Machines</li>

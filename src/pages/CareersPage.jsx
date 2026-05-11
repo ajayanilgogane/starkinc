@@ -9,7 +9,7 @@ const CareersPage = () => {
       id: 1,
       title: 'CNC Operator',
       department: 'Manufacturing',
-      location: 'California, USA',
+      location: 'Nalasopara Fata (Vasai)',
       salary: '$50,000 - $65,000',
       type: 'Full-time',
       description:
@@ -19,7 +19,7 @@ const CareersPage = () => {
       id: 2,
       title: 'Mechanical Engineer',
       department: 'Engineering',
-      location: 'California, USA',
+      location: 'Nalasopara Fata (Vasai)',
       salary: '$70,000 - $90,000',
       type: 'Full-time',
       description:
@@ -29,7 +29,7 @@ const CareersPage = () => {
       id: 3,
       title: 'Quality Assurance Specialist',
       department: 'QA',
-      location: 'California, USA',
+      location: 'Nalasopara Fata (Vasai)',
       salary: '$55,000 - $70,000',
       type: 'Full-time',
       description:
@@ -39,7 +39,7 @@ const CareersPage = () => {
       id: 4,
       title: 'Sales Executive',
       department: 'Sales',
-      location: 'Multiple Locations',
+      location: 'Nalasopara Fata (Vasai)',
       salary: '$60,000 - $100,000+',
       type: 'Full-time',
       description:
@@ -48,18 +48,18 @@ const CareersPage = () => {
     {
       id: 5,
       title: 'Technician',
-      department: 'Service',
-      location: 'California, USA',
-      salary: '$45,000 - $60,000',
+      department: 'Maintenance',
+      location: 'Nalasopara Fata (Vasai)',
+      salary: '$40,000 - $55,000',
       type: 'Full-time',
       description:
-        'Provide installation, maintenance, and repair services for manufacturing equipment.',
+        'Perform maintenance and repair tasks on industrial equipment and machinery.',
     },
     {
       id: 6,
       title: 'Intern - Manufacturing',
       department: 'Manufacturing',
-      location: 'California, USA',
+      location: 'Nalasopara Fata (Vasai)',
       salary: 'Stipend',
       type: 'Internship',
       description: 'Learn manufacturing processes and gain hands-on experience in industrial production.',

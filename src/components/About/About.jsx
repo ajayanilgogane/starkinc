@@ -13,7 +13,7 @@ const About = () => {
           <div className="about-text">
             <p>
               Stark Industries is a leading global manufacturer of advanced industrial machinery and automation solutions.
-              With over 50 years of expertise, we deliver cutting-edge equipment and services to thousands of businesses worldwide.
+              With over 22 years of expertise, we deliver cutting-edge equipment and services to thousands of businesses worldwide.
             </p>
             <p>
               Our commitment to innovation, quality, and customer satisfaction sets us apart in the manufacturing industry.
@@ -22,11 +22,11 @@ const About = () => {
 
           <div className="about-stats">
             <div className="stat">
-              <h3>50+</h3>
+              <h3>22+</h3>
               <p>Years of Experience</p>
             </div>
             <div className="stat">
-              <h3>15k+</h3>
+              <h3>5k+</h3>
               <p>Satisfied Clients</p>
             </div>
             <div className="stat">

@@ -14,16 +14,22 @@ import {
   decoilerMachine,
   rollmachine,
   fastpunching,
-  prepunching
+  prepunching,
+  ctl,
+  rollforming,
+  fastgangpunching
 
 } from '../assets/images';
 import './Pages.css';
+import { useNavigate } from 'react-router-dom';
 
 const ProductsPage = () => {
+  const navigate = useNavigate();
+
   const products = [
-       {
+    {
       id: 1,
-      name: 'Roll Machine',
+      name: 'Roll Forming Machine',
       image: rollmachine,
       price: '$30,000 - $100,000',
       specs: [
@@ -36,19 +42,32 @@ const ProductsPage = () => {
     },
     {
       id: 2,
+      name: 'ctl machine',
+      image: ctl,
+      price: '$25,000 - $90,000',
+      specs: [
+        'High-speed cutting',
+        'Precision length control',
+        'Durable design',
+      ],
+      description:
+        'Cut-to-length machines for precise sheet metal cutting.',
+    },
+    {
+      id: 3,
       name: 'SPM Machines',
       image: ncf001,
       price: '$40,000 - $150,000',
       specs: [
-        'Multi-head configuration',
-        'Precision positioning',
-        'High-speed operation',
+        'Customizable configurations',
+        'High efficiency',
+        'Robust design',
       ],
       description:
-        'Special Purpose Machines for high-precision manufacturing with multi-head punching capabilities.',
+        'Special purpose machines for specific industrial applications.',
     },
     {
-      id: 3,
+      id: 4,
       name: 'Hydraulic Powerpack',
       image: hydraulicPowerpack,
       price: '$15,000 - $80,000',
@@ -61,7 +80,7 @@ const ProductsPage = () => {
         'Heavy-duty hydraulic power units designed for industrial machinery and equipment applications.',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Hydraulic Pressing Machine',
       image: hp,
       price: '$25,000 - $120,000',
@@ -74,7 +93,7 @@ const ProductsPage = () => {
         'Professional hydraulic presses for metal forming, stamping, and heavy-duty industrial operations.',
     },
     {
-      id: 5,
+      id: 6,
       name: 'Baling Machine',
       image: doubleActionBalingPress,
       price: '$30,000 - $100,000',
@@ -87,7 +106,7 @@ const ProductsPage = () => {
         'Efficient baling systems for material compaction and waste management applications.',
     },
     {
-      id: 6,
+      id: 7,
       name: 'Metal Baler Machine',
       image: tripleActionBalingPress,
       price: '$35,000 - $110,000',
@@ -100,7 +119,7 @@ const ProductsPage = () => {
         'Industrial metal baling equipment for scrap metal compression and recycling operations.',
     },
     {
-      id: 7,
+      id: 8,
       name: 'Servo Feeder',
       image: servoFeeder,
       price: '$20,000 - $75,000',
@@ -113,7 +132,7 @@ const ProductsPage = () => {
         'Precision servo-driven feeding systems for automated production lines and manufacturing.',
     },
     {
-      id: 8,
+      id: 9,
       name: 'Hydraulic Punching Machines',
       image: shearingMachine,
       price: '$45,000 - $180,000',
@@ -126,7 +145,7 @@ const ProductsPage = () => {
         'High-speed hydraulic punching equipment for sheet metal and component manufacturing.',
     },
     {
-      id: 9,
+      id: 10,
       name: 'Shearing Machine',
       image: sheering,
       price: '$40,000 - $160,000',
@@ -139,7 +158,7 @@ const ProductsPage = () => {
         'Professional metal shearing systems for precision cutting and trimming operations.',
     },
     {
-      id: 10,
+      id: 11,
       name: 'Straightener',
       image: straighteningMachine,
       price: '$25,000 - $90,000',
@@ -152,7 +171,7 @@ const ProductsPage = () => {
         'Precision straightening equipment for metal bars, wires, and flat materials.',
     },
     {
-      id: 11,
+      id: 12,
       name: 'Decoiler',
       image: decoilerMachine,
       price: '$18,000 - $70,000',
@@ -164,9 +183,8 @@ const ProductsPage = () => {
       description:
         'Industrial decoiling systems for automated material feeding and processing applications.',
     },
-
     {
-      id: 12,
+      id: 13,
       name: 'Fast Punching Machine',
       image: fastpunching,
       price: '$40,000 - $150,000',
@@ -179,7 +197,7 @@ const ProductsPage = () => {
         'High-speed punching equipment for rapid production of sheet metal components.',
     },
     {
-      id: 13,
+      id: 14,
       name: 'Pre-Punching Machine',
       image: prepunching,
       price: '$35,000 - $120,000',
@@ -192,6 +210,10 @@ const ProductsPage = () => {
         'Specialized pre-punching machines for preparing sheet metal for subsequent manufacturing processes.',
     },
   ];
+
+  const handleRequestQuote = (productName) => {
+    navigate('/quote', { state: { productInterest: productName } });
+  };
 
   return (
     <div className="products-page">
@@ -207,30 +229,39 @@ const ProductsPage = () => {
       <section className="page-content">
         <div className="content-container">
           <div className="products-catalog">
-            {products.map((product) => (
-              <div key={product.id} className="product-detail-card">
-                <div className="product-detail-image">
-                  <img src={product.image} alt={product.name} />
-                </div>
-
-                <div className="product-detail-info">
-                  <h3>{product.name}</h3>
-                  <p className="product-price">{product.price}</p>
-                  <p className="product-description">{product.description}</p>
-
-                  <div className="product-specs">
-                    <h4>Key Features:</h4>
-                    <ul>
-                      {product.specs.map((spec, index) => (
-                        <li key={index}>{spec}</li>
-                      ))}
-                    </ul>
+            {products && products.length > 0 ? (
+              products.map((product) => (
+                <div key={product.id} className="product-detail-card">
+                  <div className="product-detail-image">
+                    <img src={product.image} alt={product.name} />
                   </div>
 
-                  <button className="detail-btn">Request Quote</button>
+                  <div className="product-detail-info">
+                    <h3>{product.name}</h3>
+                    <p className="product-price">{product.price}</p>
+                    <p className="product-description">{product.description}</p>
+
+                    <div className="product-specs">
+                      <h4>Key Features:</h4>
+                      <ul>
+                        {product.specs && product.specs.map((spec, index) => (
+                          <li key={index}>{spec}</li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <button
+                      className="detail-btn"
+                      onClick={() => handleRequestQuote(product.name)}
+                    >
+                      Request Quote
+                    </button>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <p>No products available at the moment.</p>
+            )}
           </div>
         </div>
       </section>

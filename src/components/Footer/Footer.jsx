@@ -88,7 +88,7 @@ const Footer = () => {
             <p>
               <strong>Phone:</strong>
               <br />
-              +1 (555) 123-4567
+              +91 - 8889780790
             </p>
             <p>
               <strong>Email:</strong>

@@ -185,7 +185,7 @@ const QuotePage = () => {
 
               <h3>Direct Contact</h3>
               <p>
-                <strong>Phone:</strong> +1 (555) 123-4567
+                <strong>Phone:</strong> +91 - 8889780790
               </p>
               <p>
                 <strong>Email:</strong> sales@starkindustries.com
