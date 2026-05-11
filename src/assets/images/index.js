@@ -18,6 +18,9 @@ import HeavyEngineering from './heavy-engineering.jpg';
 import rollmachine from './roll-machine.jpg';
 import fastpunching from './fast-punching.jpg';
 import prepunching from './pre-punching.jpg';
+import ctl from './ctl.jpg';
+import rollforming from './roll-forming.jpg';
+import fastgangpunching from './fast-gang-punching.jpg';
 export {
   aboutImage,
   hydraulicPowerpack,
@@ -38,5 +41,8 @@ export {
     HeavyEngineering,
     rollmachine,
     fastpunching,
-    prepunching
+    prepunching,
+    ctl,
+    rollforming,
+    fastgangpunching
 };
