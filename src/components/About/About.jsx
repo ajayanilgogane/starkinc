@@ -13,7 +13,7 @@ const About = () => {
           <div className="about-text">
             <p>
               Stark Industries is a leading global manufacturer of advanced industrial machinery and automation solutions.
-              With over 22 years of expertise, we deliver cutting-edge equipment and services to thousands of businesses worldwide.
+              With over 12 years of expertise, we deliver cutting-edge equipment and services to thousands of businesses worldwide.
             </p>
             <p>
               Our commitment to innovation, quality, and customer satisfaction sets us apart in the manufacturing industry.

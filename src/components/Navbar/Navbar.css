@@ -33,7 +33,7 @@
   width: 58px;
   height: 58px;
   object-fit: contain;   /* fixed */
-  background: white;
+  background: rgba(6, 4, 4, 0.325);
   padding: 4px;
   border-radius: 10px;
   border: 2px solid rgba(0, 212, 255, 0.35);

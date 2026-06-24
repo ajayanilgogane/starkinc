@@ -30,7 +30,7 @@ const Navbar = () => {
             <span>INDUSTRIES</span>
           </div>
 
-          <span className="since-badge">Since 2004</span>
+          <span className="since-badge">Since 2014</span>
         </Link>
 
         <div className="menu-icon" onClick={toggleMenu}>

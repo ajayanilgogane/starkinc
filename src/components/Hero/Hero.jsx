@@ -40,7 +40,7 @@ const Hero = () => {
       <div className="hero-inner">
         <div className="hero-copy">
           <p className="hero-label">
-            Manufacturing Excellence • SPM • Hydraulic Systems
+           "Manufacturers of High-Speed Multi-Head Online Punching Machines • Metal Forming Machines • Special Purpose Machines (SPMs) • Hydraulic Systems"
           </p>
 
           <h1 className="hero-title">

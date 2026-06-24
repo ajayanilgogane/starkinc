@@ -13,7 +13,7 @@ const Footer = () => {
             <h4>About Stark Industries</h4>
             <p>
               Leading manufacturer of advanced industrial machinery and automation solutions
-              serving businesses worldwide since 2004.
+              serving businesses worldwide since 2014.
             </p>
             <div className="social-links">
               <a href="#facebook" aria-label="Facebook">
