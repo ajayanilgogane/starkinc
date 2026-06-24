@@ -39,19 +39,26 @@ const Hero = () => {
 
       <div className="hero-inner">
         <div className="hero-copy">
-          <p className="hero-label">
-           "Manufacturers of High-Speed Multi-Head Online Punching Machines • Metal Forming Machines • Special Purpose Machines (SPMs) • Hydraulic Systems"
-          </p>
+        <p className="hero-label">
+          Since 2014 • Industrial Machinery Manufacturer
+        </p>
 
-          <h1 className="hero-title">
-            Engineering Tomorrow's{' '}
-            <span className="highlight">Industrial Solutions</span>
-          </h1>
+        <div className="hero-services">
+          <span>● High-Speed Multi-Head Online Punching Machines</span>
+          <span>● Metal Forming Machines</span>
+          <span>● Special Purpose Machines (SPMs)</span>
+          <span>● Hydraulic Systems</span>
+        </div>
 
-          <p className="hero-subtitle">
-            Custom-designed SPM machines, hydraulic press systems and automation
-            equipment for manufacturing leaders.
-          </p>
+        <h1 className="hero-title">
+          Engineering Tomorrow's{' '}
+          <span className="highlight">Industrial Solutions</span>
+        </h1>
+
+        <p className="hero-subtitle">
+          Custom-designed SPM machines, hydraulic press systems and automation
+          equipment for manufacturing leaders.
+        </p>
 
           <div className="hero-buttons">
             <Link to="/products" className="btn btn-primary">
