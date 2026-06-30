@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
-import aboutImage from '../../assets/images/about-image.webp';
+import aboutImage from '../../assets/images/about-image.png';
 import './Navbar.css';
 
 const Navbar = () => {
