@@ -1,19 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import { FiChevronLeft, FiChevronRight, FiBriefcase } from 'react-icons/fi';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import './Clients.css';
+import karamtaraLogo from '../../assets/images/karamtara.webp';
+import purshotamLogo from '../../assets/images/purshotam.png';
+import vikramLogo from '../../assets/images/vikram.png';
+import jayaamLogo from '../../assets/images/jayaam.png';
+import ashapuraLogo from '../../assets/images/ashapura.png';
+import miltonLogo from '../../assets/images/milton.avif';
+import nayasaLogo from '../../assets/images/nayasa.avif';
+import rishabhLogo from '../../assets/images/rishabh.jpg';
+import sunrackLogo from '../../assets/images/sunrack.svg';
+import alokRubberLogo from '../../assets/images/alokrubberindia.jpg';
+import keybondLogo from '../../assets/images/keybond.webp';
 
 const clients = [
-  { name: 'Karamtara Engineering Ltd', industry: 'Engineering & Infrastructure' },
-  { name: 'Purshotam Profile Pvt Ltd', industry: 'Metal Processing' },
-  { name: 'Vikram Solar Ltd', industry: 'Renewable Energy' },
-  { name: 'Jayaam Galvanizer Pvt Ltd', industry: 'Galvanizing Solutions' },
-  { name: 'Ashapura Industries', industry: 'Industrial Manufacturing' },
-  { name: 'Milton', industry: 'Consumer Products' },
-  { name: 'Nayasa', industry: 'Plastic Manufacturing' },
-  { name: 'Rishab Plast', industry: 'Packaging & Plastics' },
-  { name: 'Sunrack Technologies', industry: 'Solar Infrastructure' },
-  { name: 'Alok Rubber', industry: 'Rubber Manufacturing' },
-  { name: 'Keybond Industries', industry: 'Industrial Components' },
+  { name: 'Karamtara Engineering Ltd', industry: 'Engineering & Infrastructure', logo: karamtaraLogo },
+  { name: 'Purshotam Profile Pvt Ltd', industry: 'Metal Processing', logo: purshotamLogo },
+  { name: 'Vikram Solar Ltd', industry: 'Renewable Energy', logo: vikramLogo },
+  { name: 'Jayaam Galvanizer Pvt Ltd', industry: 'Galvanizing Solutions', logo: jayaamLogo },
+  { name: 'Ashapura Industries', industry: 'Industrial Manufacturing', logo: ashapuraLogo },
+  { name: 'Milton', industry: 'Consumer Products', logo: miltonLogo },
+  { name: 'Nayasa', industry: 'Plastic Manufacturing', logo: nayasaLogo },
+  { name: 'Rishab Plast', industry: 'Packaging & Plastics', logo: rishabhLogo },
+  { name: 'Sunrack Technologies', industry: 'Solar Infrastructure', logo: sunrackLogo },
+  { name: 'Alok Rubber', industry: 'Rubber Manufacturing', logo: alokRubberLogo },
+  { name: 'Keybond Industries', industry: 'Industrial Components', logo: keybondLogo },
 ];
 
 const Clients = () => {
@@ -66,8 +77,8 @@ const Clients = () => {
             >
               {getVisibleClients().map((client, index) => (
                 <div key={index} className={`client-card ${client.className}`}>
-                  <div className="client-icon">
-                    <FiBriefcase />
+                  <div className="client-logo">
+                    <img src={client.logo} alt={`${client.name} logo`} />
                   </div>
                   <h3>{client.name}</h3>
                   <p>{client.industry}</p>

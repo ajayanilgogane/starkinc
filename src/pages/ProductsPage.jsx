@@ -31,7 +31,7 @@ const ProductsPage = () => {
       id: 1,
       name: 'Roll Forming Machine',
       image: rollmachine,
-      price: '$30,000 - $100,000',
+      price: '₹22,00,000 - ₹80,00,000',
       specs: [
         'High precision',
         'Durable construction',
@@ -44,7 +44,7 @@ const ProductsPage = () => {
       id: 2,
       name: 'ctl machine',
       image: ctl,
-      price: '$25,000 - $90,000',
+      price: '₹18,00,000 - ₹65,00,000',
       specs: [
         'High-speed cutting',
         'Precision length control',
@@ -57,7 +57,7 @@ const ProductsPage = () => {
       id: 3,
       name: 'SPM Machines',
       image: ncf001,
-      price: '$40,000 - $150,000',
+      price: '₹30,00,000 - ₹1,10,00,000',
       specs: [
         'Customizable configurations',
         'High efficiency',
@@ -70,7 +70,7 @@ const ProductsPage = () => {
       id: 4,
       name: 'Hydraulic Powerpack',
       image: hydraulicPowerpack,
-      price: '$15,000 - $80,000',
+      price: '₹10,00,000 - ₹55,00,000',
       specs: [
         'High pressure output',
         'Temperature control',
@@ -83,7 +83,7 @@ const ProductsPage = () => {
       id: 5,
       name: 'Hydraulic Pressing Machine',
       image: hp,
-      price: '$25,000 - $120,000',
+      price: '₹18,00,000 - ₹88,00,000',
       specs: [
         'Tonnage: 10T - 500T',
         'Automated controls',
@@ -96,7 +96,7 @@ const ProductsPage = () => {
       id: 6,
       name: 'Baling Machine',
       image: doubleActionBalingPress,
-      price: '$30,000 - $100,000',
+      price: '₹22,00,000 - ₹75,00,000',
       specs: [
         'High compression ratio',
         'Durable construction',
@@ -109,7 +109,7 @@ const ProductsPage = () => {
       id: 7,
       name: 'Metal Baler Machine',
       image: tripleActionBalingPress,
-      price: '$35,000 - $110,000',
+      price: '₹25,00,000 - ₹82,00,000',
       specs: [
         'Industrial grade',
         'Heavy-duty hydraulics',
@@ -122,7 +122,7 @@ const ProductsPage = () => {
       id: 8,
       name: 'Servo Feeder',
       image: servoFeeder,
-      price: '$20,000 - $75,000',
+      price: '₹15,00,000 - ₹60,00,000',
       specs: [
         'Precision control',
         'Variable speed',
@@ -135,7 +135,7 @@ const ProductsPage = () => {
       id: 9,
       name: 'Hydraulic Punching Machines',
       image: shearingMachine,
-      price: '$45,000 - $180,000',
+      price: '₹33,00,000 - ₹1,45,00,000',
       specs: [
         '50-60 ppm capacity',
         'Precision punching',
@@ -148,7 +148,7 @@ const ProductsPage = () => {
       id: 10,
       name: 'Shearing Machine',
       image: sheering,
-      price: '$40,000 - $160,000',
+      price: '₹30,00,000 - ₹1,25,00,000',
       specs: [
         'High precision',
         'Heavy-duty blades',
@@ -161,7 +161,7 @@ const ProductsPage = () => {
       id: 11,
       name: 'Straightener',
       image: straighteningMachine,
-      price: '$25,000 - $90,000',
+      price: '₹18,00,000 - ₹70,00,000',
       specs: [
         'Precision accuracy',
         'Multiple configurations',
@@ -174,7 +174,7 @@ const ProductsPage = () => {
       id: 12,
       name: 'Decoiler',
       image: decoilerMachine,
-      price: '$18,000 - $70,000',
+      price: '₹13,00,000 - ₹50,00,000',
       specs: [
         'Variable speed control',
         'Heavy-duty construction',
@@ -187,7 +187,7 @@ const ProductsPage = () => {
       id: 13,
       name: 'Fast Punching Machine',
       image: fastpunching,
-      price: '$40,000 - $150,000',
+      price: '₹30,00,000 - ₹1,15,00,000',
       specs: [
         'High-speed operation',
         'Precision punching',
@@ -200,7 +200,7 @@ const ProductsPage = () => {
       id: 14,
       name: 'Pre-Punching Machine',
       image: prepunching,
-      price: '$35,000 - $120,000',
+      price: '₹25,00,000 - ₹95,00,000',
       specs: [
         'Pre-punching capabilities',
         'Precision alignment',
