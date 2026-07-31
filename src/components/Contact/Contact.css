@@ -75,6 +75,69 @@
   font-size: 0.95rem;
 }
 
+.info-link {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-link:hover {
+  color: #7ae9ff;
+}
+
+.contact-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: rgba(0, 212, 255, 0.08);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 12px;
+}
+
+.contact-cta h3 {
+  color: #00d4ff;
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.contact-cta p {
+  color: #b0b8d4;
+  line-height: 1.7;
+}
+
+.contact-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.contact-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+  color: #07121f;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-link-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 212, 255, 0.25);
+}
+
+.contact-link-btn.secondary {
+  background: transparent;
+  color: #00d4ff;
+  border: 1px solid rgba(0, 212, 255, 0.35);
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;

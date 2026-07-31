@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import './Contact.css';
 
-const Contact = () => {
+const Contact = ({ showDetails = true }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -34,31 +35,52 @@ const Contact = () => {
         <p className="section-subtitle">We're Here to Help</p>
 
         <div className="contact-content">
-          <div className="contact-info">
-            <div className="info-item">
-              <FiPhone className="info-icon" />
-              <div>
-                <h4>Phone</h4>
-                <p>+91 - 8889780790</p>
+          {showDetails ? (
+            <div className="contact-info">
+              <div className="info-item">
+                <FiPhone className="info-icon" />
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+918889780790" className="info-link">
+                    +91 - 8889780790
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <div className="info-item">
-              <FiMail className="info-icon" />
-              <div>
-                <h4>Email</h4>
-                <p>info@starkindustries.com</p>
+              <div className="info-item">
+                <FiMail className="info-icon" />
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:info@starkindustries.com" className="info-link">
+                    info@starkindustries.com
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <div className="info-item">
-              <FiMapPin className="info-icon" />
-              <div>
-                <h4>Address</h4>
-                <p>Sr.No. 51/1, Umar Compound, Sopara Phata, NH -8, Vasai, Maharashtra 401208</p>
+              <div className="info-item">
+                <FiMapPin className="info-icon" />
+                <div>
+                  <h4>Address</h4>
+                  <p>Sr.No. 51/1, Umar Compound, Sopara Phata, NH -8, Vasai, Maharashtra 401208</p>
+                </div>
               </div>
             </div>
-          </div>
+          ) : (
+            <div className="contact-cta">
+              <h3>Ready to discuss your project?</h3>
+              <p>
+                Share your requirements and let our team recommend the right machinery and support solution.
+              </p>
+              <div className="contact-cta-actions">
+                <Link to="/contact" className="contact-link-btn">
+                  Contact Us
+                </Link>
+                <Link to="/quote" className="contact-link-btn secondary">
+                  Request a Quote
+                </Link>
+              </div>
+            </div>
+          )}
 
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">

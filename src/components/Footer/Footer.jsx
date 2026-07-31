@@ -75,26 +75,20 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact CTA */}
           <div className="footer-col">
-            <h4>Contact Info</h4>
+            <h4>Get in Touch</h4>
             <p>
-              <strong>Address:</strong>
-              <br />
-              Sr.No. 51/1, Umar Compound, Sopara Phata
-              <br />
-              NH -8, Vasai, Maharashtra 401208
+              Explore our machinery range or request a customized quote for your industrial requirements.
             </p>
-            <p>
-              <strong>Phone:</strong>
-              <br />
-              +91 - 8889780790
-            </p>
-            <p>
-              <strong>Email:</strong>
-              <br />
-              info@starkindustries.com
-            </p>
+            <div className="footer-cta-links">
+              <Link to="/contact" className="footer-cta-btn">
+                Contact Us
+              </Link>
+              <Link to="/quote" className="footer-cta-btn secondary">
+                Request a Quote
+              </Link>
+            </div>
           </div>
         </div>
 

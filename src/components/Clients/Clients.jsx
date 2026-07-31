@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import React from 'react';
 import './Clients.css';
 import karamtaraLogo from '../../assets/images/karamtara.webp';
 import purshotamLogo from '../../assets/images/purshotam.png';
@@ -28,34 +27,8 @@ const clients = [
 ];
 
 const Clients = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % clients.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + clients.length) % clients.length);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 2500);
-    return () => clearInterval(interval);
-  }, []);
-
-  const getVisibleClients = () => {
-    const visible = [];
-
-    for (let i = -1; i <= 1; i++) {
-      const index = (currentIndex + i + clients.length) % clients.length;
-      visible.push({
-        ...clients[index],
-        className: i === 0 ? 'active' : 'side',
-      });
-    }
-
-    return visible;
-  };
+  // Triple the array elements to ensure absolute seamlessness during the infinite CSS scroll
+  const duplicatedClients = [...clients, ...clients, ...clients];
 
   return (
     <section className="clients">
@@ -66,17 +39,10 @@ const Clients = () => {
         </div>
 
         <div className="clients-carousel">
-          <button className="slider-btn" onClick={prevSlide}>
-            <FiChevronLeft />
-          </button>
-
           <div className="carousel-window">
-            <div
-              className="carousel-track"
-              key={currentIndex}
-            >
-              {getVisibleClients().map((client, index) => (
-                <div key={index} className={`client-card ${client.className}`}>
+            <div className="carousel-track">
+              {duplicatedClients.map((client, index) => (
+                <div key={index} className="client-card">
                   <div className="client-logo">
                     <img src={client.logo} alt={`${client.name} logo`} />
                   </div>
@@ -86,14 +52,6 @@ const Clients = () => {
               ))}
             </div>
           </div>
-
-          <button className="slider-btn" onClick={nextSlide}>
-            <FiChevronRight />
-          </button>
-        </div>
-
-        <div className="client-counter">
-          {currentIndex + 1} / {clients.length}
         </div>
       </div>
     </section>

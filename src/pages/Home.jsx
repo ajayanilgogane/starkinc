@@ -21,7 +21,7 @@ const Home = () => {
       <Services />
       <Industries />
       <WhyChooseUs />
-      <Contact />
+      <Contact showDetails={false} />
       <Footer />
     </div>
   );

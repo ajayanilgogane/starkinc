@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import './Pages.css';
@@ -184,11 +185,11 @@ const QuotePage = () => {
               <p>Our sales team typically responds to quote requests within 24-48 business hours.</p>
 
               <h3>Direct Contact</h3>
+              <p>Use the contact page or send us a request for a tailored quote and project discussion.</p>
               <p>
-                <strong>Phone:</strong> +91 - 8889780790
-              </p>
-              <p>
-                <strong>Email:</strong> sales@starkindustries.com
+                <Link to="/contact" className="submit-btn" style={{ display: 'inline-block', textDecoration: 'none' }}>
+                  Contact Us
+                </Link>
               </p>
             </div>
           </div>
