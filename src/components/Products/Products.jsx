@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   ncf001,
   hydraulicPowerpack,
@@ -116,16 +117,29 @@ const Products = () => {
   return (
     <section className="products" id="products">
       <div className="products-container">
-        <h2 className="section-title">Our Products</h2>
-        <p className="section-subtitle">Industry-Leading Manufacturing Solutions</p>
+        <div className="section-heading">
+          <div className="section-heading-copy">
+            <span className="section-eyebrow">01 / Machinery</span>
+            <h2 className="section-title">Machines made for the work you do.</h2>
+            <p className="section-intro">
+              Explore dependable equipment for metal processing, forming, and
+              production automation.
+            </p>
+          </div>
+          <Link to="/products" className="section-action">
+            Explore all products <span aria-hidden="true">→</span>
+          </Link>
+        </div>
 
         <div className="products-grid">
-          {products.map((product) => (
+          {products.slice(0, 8).map((product) => (
             <div key={product.id} className="product-card">
               <div className="product-image">
                 <img src={product.image} alt={product.name} />
                 <div className="product-overlay">
-                  <button className="product-btn">View Details</button>
+                  <Link to="/products" className="product-btn">
+                    View Products
+                  </Link>
                 </div>
               </div>
               <div className="product-info">
@@ -134,6 +148,11 @@ const Products = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="section-bottom-action">
+          <Link to="/products" className="section-action">
+            View the complete product range <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
     </section>

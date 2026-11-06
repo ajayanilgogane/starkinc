@@ -34,8 +34,9 @@ const Clients = () => {
     <section className="clients">
       <div className="clients-container">
         <div className="clients-header">
-          <h2>Our Trusted Clients</h2>
-          <p>Partnering with leading industries across India</p>
+          <span className="section-eyebrow">05 / Partnerships</span>
+          <h2>Trusted on the factory floor.</h2>
+          <p>Working alongside manufacturers across India.</p>
         </div>
 
         <div className="clients-carousel">

@@ -1,67 +1,72 @@
 import React from 'react';
 import './About.css';
-import aboutImage from '../../assets/images/about-image.webp';
+import factoryImage from '../../assets/images/ctl.jpg';
 
 const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-container">
         <div className="about-content">
+          <span className="section-eyebrow">Company / Since 2014</span>
           <h2 className="section-title">About Stark Industries</h2>
           <p className="section-subtitle">Who We Are</p>
 
           <div className="about-text">
             <p>
-              Stark Industries is a leading global manufacturer of advanced industrial machinery and automation solutions.
-              With over 12 years of expertise, we deliver cutting-edge equipment and services to thousands of businesses worldwide.
+              Stark Industries is an Indian manufacturer of industrial machinery
+              for metal processing, punching, forming, hydraulic systems, and
+              special purpose applications. Since 2014, we have worked with
+              manufacturers to shape equipment around their production needs.
             </p>
             <p>
-              Our commitment to innovation, quality, and customer satisfaction sets us apart in the manufacturing industry.
+              From machine selection and installation to ongoing technical
+              support, our team helps customers plan and run their production
+              equipment with confidence.
             </p>
           </div>
 
           <div className="about-stats">
             <div className="stat">
-              <h3>12+</h3>
-              <p>Years of Experience</p>
+              <h3>2014</h3>
+              <p>Established</p>
             </div>
             <div className="stat">
-              <h3>5k+</h3>
-              <p>Satisfied Clients</p>
+              <h3>Custom</h3>
+              <p>Machine solutions</p>
             </div>
             <div className="stat">
-              <h3>100+</h3>
-              <p>Product Models</p>
+              <h3>End-to-end</h3>
+              <p>Project support</p>
             </div>
             <div className="stat">
-              <h3>45+</h3>
-              <p>Countries Served</p>
+              <h3>India</h3>
+              <p>Based in Maharashtra</p>
             </div>
           </div>
 
           <div className="about-highlights">
             <div className="highlight-item">
-              <h4>🎯 Mission</h4>
-              <p>To innovate and deliver world-class manufacturing solutions that drive industrial excellence.</p>
+              <h4>Metal processing</h4>
+              <p>Punching, roll forming, feeding, straightening, and cut-to-length equipment.</p>
             </div>
             <div className="highlight-item">
-              <h4>🚀 Vision</h4>
-              <p>To be the global leader in intelligent manufacturing technology and automation.</p>
+              <h4>Hydraulic systems</h4>
+              <p>Presses and powerpacks for demanding industrial applications.</p>
             </div>
             <div className="highlight-item">
-              <h4>✅ ISO Certified</h4>
-              <p>ISO 9001:2015 | ISO 14001:2015 | ISO 45001:2018</p>
+              <h4>Custom machinery</h4>
+              <p>Special purpose equipment configured for specific production requirements.</p>
             </div>
             <div className="highlight-item">
-              <h4>👨‍💼 Expert Team</h4>
-              <p>Our team of 500+ engineers and technicians ensure excellence in every product.</p>
+              <h4>Lifecycle support</h4>
+              <p>Installation, maintenance, troubleshooting, and technical assistance.</p>
             </div>
           </div>
         </div>
 
         <div className="about-image">
           <div className="image-placeholder">
-             <img src={aboutImage} alt="Stark Industries Factory" />
+             <img src={factoryImage} alt="Cut-to-length metal processing machine at Stark Industries" />
           </div>
         </div>
       </div>

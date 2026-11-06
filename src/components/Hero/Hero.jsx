@@ -1,35 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import heroVideo from '../../assets/videos/factory-intro.mp4';
 import './Hero.css';
 
 const Hero = () => {
-  const [machineCount, setMachineCount] = useState(0);
-
-  useEffect(() => {
-    let count = 0;
-    const target = 500;
-    const duration = 2000; // 2 seconds
-    const increment = target / (duration / 20);
-
-    const timer = setInterval(() => {
-      count += increment;
-
-      if (count >= target) {
-        setMachineCount(target);
-        clearInterval(timer);
-      } else {
-        setMachineCount(Math.floor(count));
-      }
-    }, 20);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <section className="hero" id="hero">
       <div className="hero-video-container">
-        <video autoPlay muted loop className="hero-video">
+        <video autoPlay muted loop playsInline className="hero-video" aria-hidden="true">
           <source src={heroVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -39,26 +17,24 @@ const Hero = () => {
 
       <div className="hero-inner">
         <div className="hero-copy">
-        <p className="hero-label">
-          Since 2014 • Industrial Machinery Manufacturer
-        </p>
+          <p className="hero-label">Industrial machinery manufacturer · Since 2014</p>
 
-        <div className="hero-services">
-          <span>● High-Speed Multi-Head Online Punching Machines</span>
-          <span>● Metal Forming Machines</span>
-          <span>● Special Purpose Machines (SPMs)</span>
-          <span>● Hydraulic Systems</span>
-        </div>
+          <h1 className="hero-title">
+            Built for your line.{' '}
+            <span className="highlight">Engineered for what's next.</span>
+          </h1>
 
-        <h1 className="hero-title">
-          Engineering Tomorrow's{' '}
-          <span className="highlight">Industrial Solutions</span>
-        </h1>
+          <p className="hero-subtitle">
+            Purpose-built punching, forming and hydraulic systems—designed around
+            your production process, not the other way around.
+          </p>
 
-        <p className="hero-subtitle">
-          Custom-designed SPM machines, hydraulic press systems and automation
-          equipment for manufacturing leaders.
-        </p>
+          <div className="hero-services" aria-label="Product capabilities">
+            <span>Multi-head punching</span>
+            <span>Metal forming</span>
+            <span>Special purpose machines</span>
+            <span>Hydraulic systems</span>
+          </div>
 
           <div className="hero-buttons">
             <Link to="/products" className="btn btn-primary">
@@ -72,37 +48,32 @@ const Hero = () => {
 
           <div className="hero-stats">
             <div className="hero-stat">
-              <strong>{machineCount}+</strong>
-              <span>Machines Delivered</span>
+              <strong>Since 2014</strong>
+              <span>Manufacturing experience</span>
             </div>
 
             <div className="hero-stat">
-              <strong>24/7</strong>
-              <span>Support Availability</span>
+              <strong>Made to order</strong>
+              <span>Solutions for your process</span>
             </div>
 
             <div className="hero-stat">
-              <strong>ISO</strong>
-              <span>Certified Quality</span>
+              <strong>End-to-end</strong>
+              <span>Project support</span>
             </div>
           </div>
         </div>
 
         <div className="hero-panel">
           <div className="hero-panel-card">
-            <h3>Core Manufacturing Systems</h3>
+            <h3>Machinery built around your process</h3>
 
             <ul>
-              <li>Pre-Punching Machines</li>
-              <li>Gang Punching Machines</li>
-              <li>Roll Forming Machines</li>
-              <li>SPM Machines</li>
-              <li>Hydraulic Powerpacks</li>
-              <li>Hydraulic Pressing Machines</li>
-              <li>Baling & Metal Baler Machines</li>
-              <li>Servo Feeders</li>
-              <li>Hydraulic Punching & Shearing</li>
-              <li>Straighteners & Decoilers</li>
+              <li>High-speed punching and cut-to-length lines</li>
+              <li>Roll forming and metal processing</li>
+              <li>Special purpose machinery</li>
+              <li>Hydraulic presses and powerpacks</li>
+              <li>Feeding, straightening and decoiling</li>
             </ul>
           </div>
         </div>

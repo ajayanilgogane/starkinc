@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Pharmaceuticals,
   Textile,
@@ -57,8 +58,19 @@ const Industries = () => {
   return (
     <section className="industries" id="industries">
       <div className="industries-container">
-        <h2 className="section-title">Industries We Serve</h2>
-        <p className="section-subtitle">Serving Diverse Manufacturing Sectors</p>
+        <div className="section-heading">
+          <div className="section-heading-copy">
+            <span className="section-eyebrow">03 / Applications</span>
+            <h2 className="section-title">Built for demanding industries.</h2>
+            <p className="section-intro">
+              Flexible machinery for the production challenges found across
+              diverse manufacturing sectors.
+            </p>
+          </div>
+          <Link to="/quote" className="section-action">
+            Discuss your application <span aria-hidden="true">→</span>
+          </Link>
+        </div>
 
         <div className="industries-grid">
           {industries.map((industry) => (

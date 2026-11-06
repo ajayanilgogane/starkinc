@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css';
 import { FiTool, FiSettings, FiHelpCircle, FiPhone } from 'react-icons/fi';
 
@@ -45,8 +46,19 @@ const Services = () => {
   return (
     <section className="services" id="services">
       <div className="services-container">
-        <h2 className="section-title">Our Services</h2>
-        <p className="section-subtitle">Comprehensive Support & Solutions</p>
+        <div className="section-heading">
+          <div className="section-heading-copy">
+            <span className="section-eyebrow">02 / Support</span>
+            <h2 className="section-title">Support from setup to production.</h2>
+            <p className="section-intro">
+              Practical help at every stage keeps your equipment working and
+              your team moving.
+            </p>
+          </div>
+          <Link to="/services" className="section-action">
+            See our services <span aria-hidden="true">→</span>
+          </Link>
+        </div>
 
         <div className="services-grid">
           {services.map((service) => (
