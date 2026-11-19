@@ -17,6 +17,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar" aria-label="Main navigation">
+      <div className="navbar-utility">
+        <span>Mumbai, India</span>
+        <span>+91 88897 80790</span>
+        <span>info@starkindustries.com</span>
+        <span className="navbar-certification">ISO 9001:2015 Certified</span>
+      </div>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
           <img
