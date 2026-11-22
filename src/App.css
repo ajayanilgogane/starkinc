@@ -4,16 +4,24 @@
   background: #f5f7f9;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  --color-ink: #17283b;
-  --color-blue: #1c5687;
-  --color-blue-dark: #10243a;
-  --color-amber: #0b8cf2;
-  --color-copy: #526274;
-  --color-muted: #6d7b89;
-  --color-line: #dce3e9;
-  --color-surface: #ffffff;
-  --color-canvas: #f4f6f8;
-  --shadow-card: 0 12px 32px rgba(20, 42, 63, 0.08);
+  --color-black: #111111;
+  --color-charcoal: #252525;
+  --color-orange: #ff7900;
+  --color-orange-hover: #ff9638;
+  --color-white: #ffffff;
+  --color-light-grey: #d1d1d1;
+  --color-border: #3a3a3a;
+  --color-input: #1a1a1a;
+  --color-ink: #ffffff;
+  --color-blue: #ff7900;
+  --color-blue-dark: #111111;
+  --color-amber: #ff7900;
+  --color-copy: #d1d1d1;
+  --color-muted: #b8b8b8;
+  --color-line: #3a3a3a;
+  --color-surface: #252525;
+  --color-canvas: #111111;
+  --shadow-card: 0 14px 35px rgba(0, 0, 0, 0.35);
 }
 
 * {
@@ -1744,4 +1752,428 @@ body .page-hero {
     background: #111111;
     border-color: #3a3a3a;
   }
+}
+
+/* Global industrial contrast system */
+body {
+  --color-black: #111111;
+  --color-charcoal: #252525;
+  --color-orange: #ff7900;
+  --color-orange-hover: #ff9638;
+  --color-white: #ffffff;
+  --color-light-grey: #d1d1d1;
+  --color-border: #3a3a3a;
+  --color-input: #1a1a1a;
+  color: var(--color-white);
+  background: var(--color-black);
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  text-decoration-thickness: from-font;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-orange);
+  color: var(--color-black);
+}
+
+body .section-title,
+body .clients-header h2,
+body .page-hero-content h1,
+body .not-found-container h1,
+body .form-section h2,
+body .product-detail-info h3,
+body .service-header h3,
+body .job-header h3,
+body .quote-info h3 {
+  color: var(--color-white);
+}
+
+body .section-subtitle,
+body .section-eyebrow,
+body .section-action,
+body .page-hero-content p,
+body .product-price,
+body .product-specs ul li:before,
+body .service-details ul li:before,
+body .job-info p,
+body .job-description,
+body .form-section > p,
+body .quote-info p,
+body .quote-info ul li {
+  color: var(--color-light-grey);
+}
+
+body .section-intro,
+body .about-text,
+body .about-highlights p,
+body .stat p,
+body .product-info p,
+body .industry-info p,
+body .service-card p,
+body .reason-card p,
+body .clients-header p,
+body .client-card p,
+body .info-item p,
+body .product-description,
+body .product-specs ul li,
+body .service-description,
+body .service-details ul li,
+body .not-found-container p,
+body .footer-col p,
+body .footer-col ul li a,
+body .footer-bottom p,
+body .footer-links a,
+body .footer-links span {
+  color: var(--color-light-grey);
+}
+
+body .product-card,
+body .industry-card,
+body .service-card,
+body .reason-card,
+body .highlight-item,
+body .client-card,
+body .info-item,
+body .contact-form,
+body .product-detail-card,
+body .service-detail-card,
+body .job-card,
+body .quote-info {
+  background: var(--color-charcoal);
+  border-color: var(--color-border);
+  color: var(--color-white);
+}
+
+body .product-detail-card,
+body .service-detail-card,
+body .job-card,
+body .quote-info {
+  background: var(--color-charcoal);
+  border: 1px solid var(--color-border);
+}
+
+body .product-detail-card:hover,
+body .service-detail-card:hover,
+body .job-card:hover,
+body .job-card.active {
+  background: #2d2d2d;
+  border-color: var(--color-orange);
+}
+
+body .product-detail-info h3,
+body .product-specs h4,
+body .service-header h3,
+body .service-details h4,
+body .job-header h3,
+body .form-section h2,
+body .quote-info h3,
+body .info-item h4 {
+  color: var(--color-white);
+}
+
+body .product-price,
+body .form-group label,
+body .section-action,
+body .footer-col h4,
+body .footer-col ul li a:hover,
+body .footer-links a:hover,
+body .info-link,
+body .info-icon,
+body .gallery-overlay h4,
+body .service-header h3,
+body .job-header h3,
+body .form-section h2,
+body .quote-info h3 {
+  color: var(--color-orange);
+}
+
+body .job-type,
+body .nav-btn,
+body .btn-primary,
+body .submit-btn,
+body .detail-btn,
+body .apply-btn,
+body .product-btn,
+body .contact-link-btn,
+body .footer-cta-btn,
+body .home-link,
+body .service-icon {
+  background: var(--color-orange);
+  color: var(--color-black);
+  border-color: var(--color-orange);
+}
+
+body .nav-btn:hover,
+body .btn-primary:hover,
+body .submit-btn:hover,
+body .detail-btn:hover,
+body .apply-btn:hover,
+body .product-btn:hover,
+body .contact-link-btn:hover,
+body .footer-cta-btn:hover,
+body .home-link:hover {
+  background: var(--color-orange-hover);
+  color: var(--color-black);
+  border-color: var(--color-orange-hover);
+}
+
+body .btn-secondary,
+body .contact-link-btn.secondary,
+body .footer-cta-btn.secondary {
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-orange);
+}
+
+body .btn-secondary:hover,
+body .contact-link-btn.secondary:hover,
+body .footer-cta-btn.secondary:hover {
+  background: rgba(255, 121, 0, 0.14);
+  color: var(--color-white);
+  border-color: var(--color-orange-hover);
+}
+
+body .form-group input,
+body .form-group select,
+body .form-group textarea,
+body .contact-form input,
+body .contact-form textarea {
+  background: var(--color-input);
+  border: 1px solid #686868;
+  color: var(--color-white);
+  caret-color: var(--color-orange);
+}
+
+body .form-group input:focus,
+body .form-group select:focus,
+body .form-group textarea:focus,
+body .contact-form input:focus,
+body .contact-form textarea:focus {
+  background: #202020;
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 2px rgba(255, 121, 0, 0.28);
+  outline: none;
+}
+
+body .form-group input::placeholder,
+body .form-group textarea::placeholder,
+body .contact-form input::placeholder,
+body .contact-form textarea::placeholder {
+  color: var(--color-light-grey);
+  opacity: 1;
+}
+
+body .form-group select option {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+body .gallery-overlay {
+  background: rgba(17, 17, 17, 0.88);
+}
+
+body .gallery-overlay h4,
+body .gallery-overlay p {
+  color: var(--color-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+}
+
+body .not-found-content {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+body .not-found-icon {
+  color: var(--color-orange);
+  opacity: 1;
+}
+
+body .footer {
+  background: var(--color-black);
+  color: var(--color-light-grey);
+  border-top: 1px solid var(--color-orange);
+}
+
+body .footer-col ul li a,
+body .footer-links a {
+  color: var(--color-light-grey);
+}
+
+body .footer-col ul li a:hover,
+body .footer-links a:hover {
+  color: var(--color-orange);
+}
+
+body .navbar a,
+body .navbar button {
+  color: inherit;
+}
+
+body .menu-icon {
+  color: var(--color-white);
+  border: 1px solid var(--color-border);
+  background: transparent;
+}
+
+body {
+  color-scheme: dark;
+}
+
+body .form-section {
+  background: var(--color-charcoal);
+  border: 1px solid var(--color-border);
+  color: var(--color-white);
+}
+
+body .product-card:hover,
+body .industry-card:hover,
+body .service-card:hover,
+body .reason-card:hover,
+body .highlight-item:hover,
+body .client-card:hover,
+body .info-item:hover {
+  background: #2d2d2d;
+  border-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+body .form-group input,
+body .form-group select,
+body .form-group textarea,
+body .contact-form input,
+body .contact-form textarea {
+  color: var(--color-white);
+  -webkit-text-fill-color: var(--color-white);
+  caret-color: var(--color-orange);
+}
+
+body .form-group input:hover:not(:disabled),
+body .form-group select:hover:not(:disabled),
+body .form-group textarea:hover:not(:disabled),
+body .contact-form input:hover:not(:disabled),
+body .contact-form textarea:hover:not(:disabled) {
+  border-color: #9c9c9c;
+}
+
+body .form-group input:focus-visible,
+body .form-group select:focus-visible,
+body .form-group textarea:focus-visible,
+body .contact-form input:focus-visible,
+body .contact-form textarea:focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+body .form-group input:disabled,
+body .form-group select:disabled,
+body .form-group textarea:disabled,
+body .contact-form input:disabled,
+body .contact-form textarea:disabled {
+  background: var(--color-charcoal);
+  border-color: #686868;
+  color: #b8b8b8;
+  -webkit-text-fill-color: #b8b8b8;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+body .form-group input:user-invalid,
+body .form-group select:user-invalid,
+body .form-group textarea:user-invalid,
+body .contact-form input:user-invalid,
+body .contact-form textarea:user-invalid,
+body .form-group input[aria-invalid="true"],
+body .form-group select[aria-invalid="true"],
+body .form-group textarea[aria-invalid="true"],
+body .contact-form input[aria-invalid="true"],
+body .contact-form textarea[aria-invalid="true"] {
+  border-color: #ff6b6b;
+}
+
+body .form-group input:user-invalid:focus,
+body .form-group select:user-invalid:focus,
+body .form-group textarea:user-invalid:focus,
+body .contact-form input:user-invalid:focus,
+body .contact-form textarea:user-invalid:focus,
+body .form-group input[aria-invalid="true"]:focus,
+body .form-group select[aria-invalid="true"]:focus,
+body .form-group textarea[aria-invalid="true"]:focus,
+body .contact-form input[aria-invalid="true"]:focus,
+body .contact-form textarea[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.3);
+}
+
+body button:disabled,
+body [role="button"][aria-disabled="true"] {
+  background: #3a3a3a;
+  border-color: #686868;
+  color: #d1d1d1;
+  cursor: not-allowed;
+  opacity: 1;
+  box-shadow: none;
+  transform: none;
+}
+
+body button:active:not(:disabled),
+body [role="button"]:active:not([aria-disabled="true"]),
+body .nav-btn:active,
+body .btn-primary:active,
+body .btn-secondary:active,
+body .submit-btn:active:not(:disabled),
+body .detail-btn:active,
+body .apply-btn:active,
+body .product-btn:active,
+body .contact-link-btn:active,
+body .footer-cta-btn:active,
+body .home-link:active {
+  filter: brightness(0.9);
+  transform: translateY(1px);
+}
+
+body .form-group input:active:not(:disabled),
+body .form-group select:active:not(:disabled),
+body .form-group textarea:active:not(:disabled),
+body .contact-form input:active:not(:disabled),
+body .contact-form textarea:active:not(:disabled) {
+  border-color: var(--color-orange);
+}
+
+body input[type="checkbox"],
+body input[type="radio"] {
+  accent-color: var(--color-orange);
+}
+
+body input::selection,
+body textarea::selection {
+  background: var(--color-orange);
+  color: var(--color-black);
+}
+
+body .form-error,
+body [role="alert"] {
+  color: #ff8a8a;
+}
+
+body .form-group input:-webkit-autofill,
+body .form-group textarea:-webkit-autofill,
+body .contact-form input:-webkit-autofill,
+body .contact-form textarea:-webkit-autofill {
+  -webkit-text-fill-color: var(--color-white);
+  caret-color: var(--color-orange);
+  -webkit-box-shadow: 0 0 0 1000px var(--color-input) inset;
 }
